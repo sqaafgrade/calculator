@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQAAF Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Include jsPDF and html2canvas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>SQAAF Grade Calculator</h1>
+        <a href="/newpage/new_page.html" class="header-btn">श्रेणी शोधा</a>
+    </header>
+
+    <main>
+        <h2>आपल्या शाळेचे मानके टाका</h2>
+        <br>
+        <h3>शाळेस <input type="number" id="inputValue" placeholder="लागू असलेले मानके संख्या (max 128)" max="128"> मानके लागू असल्यास </h3>
+        <br>
+        <div id="buttonContainer">
+        <button onclick="calculateGrade()">श्रेणी शोधा</button>
+        <button id="pdfButton" onclick="generatePDF()" style="display: none;">PDF डाउनलोड करा</button>
+        </div>
+
+        <table id="gradeTable">
+            <thead>
+                <tr>
+                    <th>टक्केवारी</th>
+                    <th>प्राप्त गुण</th>
+                    <th>श्रेणी</th>
+                </tr>
+            </thead>
+            <tbody id="resultTable">
+            </tbody>
+        </table>
+
+        
+        
+    </main>
+
+    <footer>
+        © सुगंध भदाणे, <br>
+        जिल्हा परिषद मॉडेल स्कूल नामपूर मुले
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

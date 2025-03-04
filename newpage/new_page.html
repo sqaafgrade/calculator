@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQAAF Grade Finder</title>
+    <link rel="stylesheet" href="new_style.css">
+</head>
+<body>
+
+    <header>
+        <h1>SQAAF Grade Finder</h1>
+        <a href="../index.html" class="header-btn">श्रेणी तक्ता</a>
+    </header>
+
+    <main>
+        <h2>आपल्या शाळेचे मानके व प्राप्त गुण टाका</h2>
+        <div class="input-container">
+            <h3>शाळेस</h3>
+            <input type="number" id="totalMarks" placeholder="लागू असलेले मानके संख्या (max 128)" max="128">
+            <h3>मानके लागू असल्यास</h3>
+            
+            <input type="number" id="obtainedMarks" placeholder="प्राप्त गुण टाका">
+            <h3>गुण मिळाल्यास श्रेणी</h3>
+    
+            <button onclick="findGrade()">श्रेणी शोधा</button>
+        </div>
+        
+        <h2 id="gradeResult"></h2> <!-- Display the result here -->
+    </main>
+    
+
+    <footer>
+        © सुगंध भदाणे, <br>
+        जिल्हा परिषद मॉडेल स्कूल नामपूर मुले
+    </footer>
+
+    <script src="new_script.js"></script>
+</body>
+</html>
